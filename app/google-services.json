@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "965093446158",
+    "project_id": "master-notes-51f07",
+    "storage_bucket": "master-notes-51f07.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965093446158:android:f6f314e87e74790d9a225f",
+        "android_client_info": {
+          "package_name": "com.samuelokello.master_notes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "965093446158-kc8u8hpmmrp9hiripe91apm6f5qms3qh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZJyN9MNkREj5C77RMd5vlYuOdBKbL7M0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "965093446158-kc8u8hpmmrp9hiripe91apm6f5qms3qh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
