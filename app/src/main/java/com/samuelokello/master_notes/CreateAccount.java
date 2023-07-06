@@ -2,6 +2,7 @@ package com.samuelokello.master_notes;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
@@ -34,7 +35,7 @@ public class CreateAccount extends AppCompatActivity {
         tvSignIn = findViewById(R.id.sign_In_textview_btn);
 
         btnSignUp.setOnClickListener(v -> createAccount());
-        tvSignIn.setOnClickListener(v -> finish());
+        tvSignIn.setOnClickListener(v -> startActivity(new Intent(CreateAccount.this, LoginActivity.class)));
 
     }
 
@@ -59,23 +60,16 @@ public class CreateAccount extends AppCompatActivity {
             FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
             firebaseAuth.createUserWithEmailAndPassword(email, password)
                     .addOnCompleteListener(task -> {
+                        changeInProgress(false);
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
-                            changeInProgress(false);
-                            Toast.makeText(CreateAccount.this,
-                                    "Account Created Successfully", Toast.LENGTH_SHORT).show();
+                            Utility.showToast(CreateAccount.this,"Successfully create account,Check email to verify");
                             firebaseAuth.getCurrentUser().sendEmailVerification();
                             firebaseAuth.signOut();
                             finish();
-                            //FirebaseUser user = firebaseAuth.getCurrentUser();
-                            //updateUI(user);
                         } else {
                             // If sign in fails, display a message to the user.
-                            changeInProgress(false);
-                            Toast.makeText(CreateAccount.this,
-                                    task.getException()
-                                        .getLocalizedMessage(),
-                                        Toast.LENGTH_SHORT).show();//updateUI(null);
+                            Utility.showToast(CreateAccount.this, task.getException().getLocalizedMessage());
                         }
                     });
         }
