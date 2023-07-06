@@ -2,4 +2,6 @@
     <string name="app_name">Master-Notes</string>
     <string name="create_account">Create Account</string>
     <string name="upload_profile">Upload Profile</string>
+    <string name="sign_in">Welcome Back</string>
+    <string name="forgot_password">forgot password</string>
 </resources>
