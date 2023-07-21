@@ -4,4 +4,18 @@
     <string name="upload_profile">Upload Profile</string>
     <string name="sign_in">Welcome Back</string>
     <string name="forgot_password">forgot password</string>
+    <string name="my_notes">your notes</string>
+    <string name="add_note">add note</string>
+    <string name="delete_note">delete note</string>
+    <string name="Sign_in_btn">Sign In</string>
+    <string name="Null">null</string>
+    <string name="email">email</string>
+    <string name="password">Password</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="add_new_note">Add New Note</string>
+    <string name="done">Done</string>
+    <string name="title">Title</string>
+    <string name="content">Content</string>
+    <string name="edit_note">Edit your note</string>
 </resources>
