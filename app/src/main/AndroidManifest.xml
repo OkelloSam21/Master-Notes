@@ -15,12 +15,12 @@
         <activity
             android:name=".NotedetailsActivity"
             android:exported="false" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CreateAccount"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".LoginActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".CreateAccount"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".MainActivity"
             android:exported="false" />
